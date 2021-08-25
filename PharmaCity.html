@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>PharmaCity</title>
-
-
-        <!-----------Required meta tags-------------->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="main.css">
-
-
-        <!------------Bootstrap CSS------------------>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,900&display=swap" rel="stylesheet">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </head>
     <body>
-
-
-        <!--Navigation bar-->
-        <nav class="navbar" id="nav">
+        <section id="header">
             <div class="container">
-                <a href="" class="navbar-brand">Medical</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-syringe fa-2x"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="navbar-nav ml0-auto">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Account</a>
-                        </li>
-                    </ul>
+                <img src="images/logo.png" class="logo">
+                <div class="header-text">
+                    <h1>To provide maximum of online services and useful information, thus discharging the administrator and reducing the number of erroneous requests.</h1>
+                    <span class="square"></span>
+                    <p>
+                        A large amount of specialized medical information requires a high-skilled approach to filling the pages. It is important not to turn a healthcare platform into a boring directory. Make every website element (text, photo, video, flash animation) clear to visitors and accurate from the perspective of professionals.
+                    </p>
+                    <button class="common-btn">Read More</button>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
                 </div>
             </div>
+        </section>
+
+
+        <nav id="sideNav">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">FEATURES</a></li>
+                <li><a href="">TYPES OF MEDICINES</a></li>
+                <li><a href="">DISCOUNT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
         </nav>
+        <img src="images/menu.png" id="menuBtn">
 
-
-        <!--End of Navigation Bar-->
+        <script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+        </script>
     </body>
 </html>
