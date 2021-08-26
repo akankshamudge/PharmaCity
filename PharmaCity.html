@@ -12,9 +12,19 @@
                 <div class="header-text">
                     <h1>To provide maximum of online services and useful information, thus discharging the administrator and reducing the number of erroneous requests.</h1>
                     <span class="square"></span>
-                    <p>
+                    <p id="myid1" onmousedown="fun1()" onmouseup="fun2()">
                         A large amount of specialized medical information requires a high-skilled approach to filling the pages. It is important not to turn a healthcare platform into a boring directory. Make every website element (text, photo, video, flash animation) clear to visitors and accurate from the perspective of professionals.
                     </p>
+                    <script>
+                        function fun1()
+                        {
+                            document.getElementById("myid1").style.color = "red";
+                        }
+                        function fun2()
+                        {
+                            document.getElementById("myid1").style.color = "yellow";
+                        }
+                    </script>
                     <button class="common-btn">Read More</button>
                     <div class="line">
                         <span class="line-1"></span><br>
@@ -38,9 +48,55 @@
         </nav>
         <img src="images/menu.png" id="menuBtn">
 
+
+        <!-------------About--------------->
+        <section id="about">
+            <div class="about-left-col">
+                <img src="images/about.png">
+            </div>
+            <div class="about-right-col">
+                <div class="about-text">
+                    <h1>About Us</h1>
+                    <span class="square"></span>
+                    <p>PharmaCity provides news and information for pharmacy professionals to improve medication use and advance patient care. Each issue contains in-depth coverage of drugs and diseases, practice trends, and laws and regulations affecting the pharmacy profession. Pharmacy, the science and art concerned with the preparation and standardization of drugs. Its scope includes the cultivation of plants that are used as drugs, the synthesis of chemical compounds of medical value, and the analysis of medical agents.</p><br><br>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+                    
+                    <h2>"The Pharmacy that cares for the well-being of you and your family."</h2>
+                </div>
+            </div>
+        </section>
+
+
+        <!---------------Features------------------------>
+        <section id="features">
+            <div class="feature-row">
+                <div class="feature-col">
+                    <img src="">
+                    <h4></h4>
+                </div>
+                <div class="feature-col"></div>
+                <div class="feature-col"></div>
+            </div>
+        </section> 
+
+        
         <script>
             var menuBtn = document.getElementById("menuBtn");
             var sideNav = document.getElementById("sideNav");
+
+            sideNav.style.right = "-250px";
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0px";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                }
+            }
         </script>
     </body>
 </html>
