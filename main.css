@@ -127,12 +127,18 @@ nav ul li a{
 }
 
 
-/*------------Features---------------*/
-#features{
+/*------------Utility Services---------------*/
+#utilityservices{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.feature-row{
+#utilityservices h1{
+    text-align: center;
+}
+#utilityservices p{
+    text-align: center;
+}
+.utilityservices-row{
     width: 80%;
     margin: auto;
     display: flex;
@@ -140,8 +146,10 @@ nav ul li a{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.feature-col{
+.utilityservices-col{
     flex-basis: 25%;
     text-align: center;
-    display: none;
+}
+.utilityservices-col img{
+    border-radius: 10%;
 }
