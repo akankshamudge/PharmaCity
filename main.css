@@ -42,11 +42,14 @@ h1{
 p{
     font-size: 20px;
     line-height: 18px;
-    color: #777;
+    color: grey;
 }
 .header-text button{
     margin-top: 20px;
     margin-bottom: 60px;
+}
+.header-text p{
+    color: yellow;
 }
 .line-1{
     width: 15px;
@@ -128,15 +131,10 @@ nav ul li a{
 
 
 /*------------Utility Services---------------*/
+
 #utilityservices{
     padding-top: 50px;
     padding-bottom: 50px;
-}
-#utilityservices h1{
-    text-align: center;
-}
-#utilityservices p{
-    text-align: center;
 }
 .utilityservices-row{
     width: 80%;
@@ -147,9 +145,87 @@ nav ul li a{
     flex-wrap: wrap;
 }
 .utilityservices-col{
-    flex-basis: 25%;
+    flex-basis: 35%;
     text-align: center;
 }
+.utilityservices-col h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+#utilityservices h1{
+    text-align: center;
+}
+#utilityservices p{
+    text-align: center;
+}
+
 .utilityservices-col img{
-    border-radius: 10%;
+    border-radius: 40%;
+}
+.container1{
+    position: relative;
+    width: 50%;
+}
+.overlay{
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    right: 1%;
+    background-color: #090088;
+    overflow: hidden;
+    width: 200%;
+    height: 100%;
+    border-radius: 40%;
+    transform: scale(0);
+    transition: .3s ease-in-out;
+    flex-basis: 35%;
+}
+.container1:hover .overlay{
+    transform: scale(1);
+}
+.text{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.utilityservices-btn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.utilityservices-btn .line{
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+
+/*--------------TYPES OF MEDICINES-----------------------*/
+#medicines{
+    padding: 100px 0;
+}
+.medicines-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.medicines-right-col{
+    flex-basis: 50%;
+}
+.medicines-right-col img{
+    width: 100%;
+}
+.medicines-left-col{
+    flex-basis: 50%;
+}
+.medicines-text{
+    max-width: 350px;
+}
+.medicines-text button{
+    margin: 30px 0;
 }
