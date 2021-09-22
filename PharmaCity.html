@@ -15,8 +15,9 @@
                     <h1>To provide maximum of online services and useful information, thus discharging the administrator and reducing the number of erroneous requests.</h1>
                     <span class="square"></span>
                     <p id="myid1" onmousedown="fun1()" onmouseup="fun2()">
-                        A large amount of specialized medical information requires a high-skilled approach to filling the pages. It is important not to turn a healthcare platform into a boring directory. Make every website element (text, photo, video, flash animation) clear to visitors and accurate from the perspective of professionals.
+                        A large amount of specialized medical information requires a high-skilled approach to filling the pages. It is important not to turn a healthcare into a boring directory. Make every website element (text, photo, video, flash animation) clear to visitors and accurate from the perspective of professionals.
                     </p>
+                    <button class="common-btn">Read More</button>
                     <script>
                         function fun1()
                         {
@@ -27,7 +28,6 @@
                             document.getElementById("myid1").style.color = "yellow";
                         }
                     </script>
-                    <button class="common-btn">Read More</button>
                     <div class="line">
                         <span class="line-1"></span><br>
                         <span class="line-2"></span><br>
@@ -149,6 +149,7 @@
         
         <!---------------ACCOUNT--------------------->
         <section id="account">
+            <center>
             <form action="action_page.php" style="border:1px solid #ccc">
                 <div class="container1">
                   <h1>Sign Up</h1>
@@ -168,14 +169,31 @@
                     <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
                   </label>
               
-                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p><br>
+                  <p>Already have an account? <a href="">Login</a></p>
               
                   <div class="clearfix">
-                    <button type="button" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn">Sign Up</button>
+                      <button type="button" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+
+                  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+                  <div class="alert_wrapper">
+                      <div class="alert_backdrop"></div>
+                      <div class="alert_inner">
+                          <div class="alert_item alert_info">
+                              <div class="icon data_icon"></div>
+                              <div class="data">
+                                  <p class="title"><span>Info:</span>User action info</p>
+                                  <p class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iure libero officia.</p>
+                              </div>
+                              <div class="icon close"></div>
+                          </div>
+                      </div>
                   </div>
                 </div>
             </form>
+            </center>
         </section>
 
 

@@ -304,7 +304,6 @@ form input{
     outline: none;
     box-shadow: none;
     box-sizing: border-box;
-    border: 2px solid darkred;
 }
 .btn-box{
     width: 100%;
@@ -396,6 +395,7 @@ hr{
     color: white;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
 @media only screen and (max-width: 770px){
     #header{
