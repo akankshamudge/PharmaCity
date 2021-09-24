@@ -15,9 +15,10 @@
                     <h1>To provide maximum of online services and useful information, thus discharging the administrator and reducing the number of erroneous requests.</h1>
                     <span class="square"></span>
                     <p id="myid1" onmousedown="fun1()" onmouseup="fun2()">
-                        A large amount of specialized medical information requires a high-skilled approach to filling the pages. It is important not to turn a healthcare into a boring directory. Make every website element (text, photo, video, flash animation) clear to visitors and accurate from the perspective of professionals.
+                        A large amount of specialized medical information requires a high-skilled approach to filling the pages. It is important not to turn a healthcare <span class="moreText">a boring directory. Make every website element (text, photo, video, flash animation) clear to visitors and accurate from the perspective of professionals.</span> 
                     </p>
                     <button class="common-btn">Read More</button>
+                    <script src="./main.js"></script>
                     <script>
                         function fun1()
                         {
@@ -109,6 +110,46 @@
                         <p>Using this utility service, you will be getting new & refill medicine orders straightforwardly from the pharmacy website, and this will be useful in the quicker completion of the dispensing process.</p>
                 </div>
             </div>
+            <div class="center">
+                <input type="checkbox" id="show">
+                <div class="cont">
+                    <label for="show" class="close-btn fas fa-times"></label>
+                    <div class="tex">Quick Survey Form</div>
+                    <form action="#">
+                        <div class="data">
+                            <label>Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="data">
+                            <label>Email</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="data">
+                            <label>Password</label>
+                            <input type="password" required>
+                        </div>
+                        <div class="forgot-pass"><a href="#">Forgot Password?</a></div><br>
+                        <div class="form-control">
+                            <label for="role" id="label-role">Would you use our customer service in the future?</label><br>
+                            <select name="role" id="role">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="maybe">Maybe</option>
+                            </select>
+                        </div>
+                        <div class="data">
+                            <label>How can we improve our service?</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="btn">
+                            <div class="inner">
+                                <button type="submit">SUBMIT</button>
+                            </div>
+                        </div>
+                        <div class="signup-link">Not a member? <a href="#account">Sign Up Now</a></div>
+                    </form>
+                </div>
+            </div>
 
             <div class="utilityservices-btn">
                 <div class="line">
@@ -116,7 +157,7 @@
                     <span class="line-2"></span><br>
                     <span class="line-3"></span>
                 </div>
-                <button class="common-btn">Take a Quick Survey</button>
+                <label for="show" class="show-btn">Take a Quick Survey</label>
             </div>
         </section>
 
@@ -165,12 +206,8 @@
                   <label for="psw-repeat"><b>Repeat Password</b></label>
                   <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
               
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                  </label>
-              
                   <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p><br>
-                  <p>Already have an account? <a href="">Login</a></p>
+                  <p class="login">Already have an account? <a href="">Login</a></p>
               
                   <div class="clearfix">
                       <button type="button" class="cancelbtn">Cancel</button>
@@ -256,7 +293,7 @@
                 <div class="footer-right-col">
                     <div class="footer-info">
                         <div class="copyright-text">
-                            <small>pharmacityanss@info.com</small><br>
+                            <small>pharmacityanss@gmail.com</small><br>
                             <small>copyright 2021 PharmaCity</small>
                         </div>
                         <div class="footer-logo">
@@ -272,10 +309,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Add font awesome icons -->
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#"class="fa fa-linkedin"></a>
+        <a href="https://www.facebook.com/people/PharmaCity-Anss/100072900503942/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/pharmacity_4_/" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/Pharmacity4" class="fa fa-twitter"></a>
 
 
         <script>
