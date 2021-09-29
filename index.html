@@ -1,10 +1,15 @@
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
         <title>Types of Medicines</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="cards.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="https://code.jquery-3.5.1.min.js"></script>
     </head>
     <body>
+    <div class="a">
         <div class="hero">
             <div class="navbar">
                 <img src="images/logo.png" class="logo">
@@ -35,20 +40,46 @@
                 <img src="images1/bubble.png">
             </div>
         </div>
-        <div class="wrapper">
-            <div class="search_box">
-                <div class="dropdown">
-                    <div class="default_option">All</div>
-                    <ul>
-                        <li>All</li>
-                        <li>Recent</li>
-                        <li>Popular</li>
-                    </ul>
+        <div class="container">
+            <h1 class="title">What are you searching for?</h1>
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="automobiles" name="category"/>
+                        <label for="automobiles">Liquid</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="film" name="category"/>
+                        <label for="film">Tablet</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="science" name="category" />
+                        <label for="science">Capsules</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="art" name="category" />
+                        <label for="art">Topical Medicines</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="music" name="category" />
+                        <label for="music">Drops</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="travel" name="category" />
+                        <label for="travel">Inhalers</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="sports" name="category" />
+                        <label for="sports">Injections</label>
+                    </div>
                 </div>
-                <div class="search_field">
-                    <input type="text" class="input" placeholder="Search Medicines">
+                <div class="selected">Select Type of Medicines</div>
+                <div class="search-box">
+                    <input type="text" placeholder="Start Typing...."/>
                 </div>
             </div>
         </div>
+        <script src="main2.js"></script>
+    </div>
     </body>
 </html>

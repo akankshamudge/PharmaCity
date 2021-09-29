@@ -383,8 +383,11 @@ input[type=text]:focus, input[type=password]:focus {
     margin-bottom: 25px;
 }
 .clearfix button{
-    background-color: #04AA6D;
-    color: white;
+    height: 100%;
+    z-index: -1;
+    font-size: 20px;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4);
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -393,7 +396,10 @@ input[type=text]:focus, input[type=password]:focus {
     opacity: 0.9;
 }
 .clearfix button:hover {
+    font-weight: bold;
     opacity:1;
+    transition: all 0.4s;
+    left: 0;
 }
 .cancelbtn {
     padding: 14px 20px;
