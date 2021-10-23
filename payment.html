@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Payment Form</title>
+		<link href="paymentform.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="wrapper">
+			<h2>Payment Form</h2>
+			<form method="POST" autocomplete="off" name="google-sheet">
+				<h4>Account</h4>
+				<div class="input-group">
+					<div class="input-box">
+						<input type="text" placeholder="Full Name" class="name" required name="Full Name">
+						<i class="fas fa-user-alt icon"></i>
+					</div>
+				</div>
+				
+				<div class="input-group">
+					<div class="input-box">
+						<input type="email" placeholder="Email Address" class="name" required name="Email Address">
+						<i class="fa fa-envelope icon"></i>
+					</div>
+				</div>
+
+				<div class="input-group">
+					<div class="input-box">
+						<input type="text" placeholder="Address" class="name" required name="Address">
+						<i class="fa fa-address-card icon"></i>
+					</div>
+				</div>
+				
+				<div class="input-group">
+					<div class="input-box">
+						<h4>Date of Birth</h4>
+						<input type="number" placeholder="DD" class="dob">
+						<input type="number" placeholder="MM" class="dob">
+						<input type="number" placeholder="YYYY" class="dob">
+					</div>
+					
+					<div class="input-box">
+						<h4>Gender</h4>
+						<input type="radio" id="b1" checked class="radio" name="Gender" value="male">
+						<label for="b1">Male</label>
+						<input type="radio" id="b2" class="radio" name="Gender" value="female">
+						<label for="b2">Female</label>
+					</div>
+				</div>
+				
+				<div class="input-group">
+					<div class="input-box">
+						<h4>Payment Details</h4>
+						<input type="radio" name="Payment Method" id="bc1" checked class="radio" value="Credit Card">
+						<label for="bc1"><span><i class="fab fa-cc-visa"></i> Credit Card</span></label>
+						<input type="radio" name="Payment Method" id="bc2" class="radio" value="Paypal">
+						<label for="bc2"><span><i class="fab fa-cc-paypal"></i> Paypal</span></label>
+					</div>
+				</div>
+				
+				<div class="input-group">
+					<div class="input-box">
+						<input type="number" placeholder="Card Number" class="name" required name="Card Number">
+						<i class="fas fa-credit-card icon"></i>
+					</div>
+				</div>
+				
+				<div class="input-group">
+					<div class="input-box">
+						<input type="number" placeholder="Card CVV" class="name" required name="CVV">
+						<i class="fas fa-user-alt icon"></i>
+					</div>
+					
+					<div class="input-box">
+						<select>
+							<option>01 Dec</option>
+							<option>02 Dec</option>
+							<option>03 Dec</option>
+						</select>
+						<select>
+							<option>2021</option>
+							<option>2022</option>
+							<option>2023</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="input-group">
+					<div class="input-box">
+						<button type="submit">PAY NOW</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwt-elQoQOA9A7Pk37TvzYb6vc4SqFBU74y0RvEo78bQH7YrudHPStR9OuO8qmR3rqb/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Your Payment has been proceeded... Your product will reach soon at your door step"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</body>
+</html>
