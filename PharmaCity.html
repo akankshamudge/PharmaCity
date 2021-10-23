@@ -110,46 +110,6 @@
                         <p>Using this utility service, you will be getting new & refill medicine orders straightforwardly from the pharmacy website, and this will be useful in the quicker completion of the dispensing process.</p>
                 </div>
             </div>
-            <div class="center">
-                <input type="checkbox" id="show">
-                <div class="cont">
-                    <label for="show" class="close-btn fas fa-times"></label>
-                    <div class="tex">Quick Survey Form</div>
-                    <form action="#">
-                        <div class="data">
-                            <label>Name</label>
-                            <input type="text" required>
-                        </div>
-                        <div class="data">
-                            <label>Email</label>
-                            <input type="email" required>
-                        </div>
-                        <div class="data">
-                            <label>Password</label>
-                            <input type="password" required>
-                        </div>
-                        <div class="forgot-pass"><a href="#">Forgot Password?</a></div><br>
-                        <div class="form-control">
-                            <label for="role" id="label-role">Would you use our customer service in the future?</label><br>
-                            <select name="role" id="role">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                                <option value="maybe">Maybe</option>
-                            </select>
-                        </div>
-                        <div class="data">
-                            <label>How can we improve our service?</label>
-                            <input type="text" required>
-                        </div>
-                        <div class="btn">
-                            <div class="inner">
-                                <button type="submit">SUBMIT</button>
-                            </div>
-                        </div>
-                        <div class="signup-link">Not a member? <a href="#account">Sign Up Now</a></div>
-                    </form>
-                </div>
-            </div>
 
             <div class="utilityservices-btn">
                 <div class="line">
@@ -157,7 +117,7 @@
                     <span class="line-2"></span><br>
                     <span class="line-3"></span>
                 </div>
-                <label for="show" class="show-btn">Take a Quick Survey</label>
+                <label for="show" class="show-btn"><a href="http://localhost/php_program/survey.html">Take a Quick Survey</a></label>
             </div>
         </section>
 
@@ -191,31 +151,26 @@
         <!---------------ACCOUNT--------------------->
         <section id="account">
             <center>
-            <form action="action_page.php" style="border:1px solid #ccc">
+			<form action="connect1.php" style="border:1px solid #ccc" method="POST">
                 <div class="container1">
                   <h1>Sign Up</h1>
                   <p>Please fill in this form to create an account.</p>
                   <hr>
-              
                   <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
+                  <input type="email" placeholder="Enter Email" name="email" required><br>
               
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-              
-                  <label for="psw-repeat"><b>Repeat Password</b></label>
-                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-              
-                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p><br>
-                  <p class="login">Already have an account? <a href="">Login</a></p>
+                  <label for="password"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="password" required><br>
+
+                  <p class="login">Already have an account? <a href="http://localhost/php_program/form.html">Login</a></p><br>
               
                   <div class="clearfix">
-                      <button type="button" class="cancelbtn">Cancel</button>
-                      <button type="submit" class="signupbtn">Sign Up</button>
+                      <input type="reset" class="show-btn" value="Cancel">
+                      <input type="submit" class="show-btn" value="Signup">
                   </div>
                   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
                 </div>
-            </form>
+			</form>
             </center>
         </section>
 
@@ -224,28 +179,17 @@
 
         <!--------------CONTACT---------------------->
         <section id="contact">
-            <div class="container contact-row">
-                <div class="contact-left-col">
-                    <h1>Leave A Feedback...!!!!</h1>
-                    <form>
-                        <input type="text" placeholder="Enter Name">
-                        <input type="email" placeholder="Enter Email">
-                        <input type="text" placeholder="Leave Feedback">
-                        <div class="btn-box">
-                            <button class="common-btn">Submit</button>
-                        </div>
-                    </form>
-                    <div class="line">
-                        <span class="line-1"></span><br>
-                        <span class="line-2"></span><br>
-                        <span class="line-3"></span>
-                    </div>
+                <center>
+                <div class="contt">
+                    <img src="images/contact-1.png" align="center">
+                    <a href="http://localhost/php_program/feedback.html"><button class="bb">Leave a Feedback!!!</button></a>
                 </div>
-                <div class="contact-right-col">
-                    <img src="images/contact-1.png">
-                </div>
-            </div>
+                </center>
+            
         </section>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         
         <!------------------FOOTER--------------------->
@@ -284,7 +228,6 @@
                         </div>
                         <div class="footer-logo">
                             <img src="images/logo2.png">
-                            <button class="common-btn">Help..!!</button>
                         </div>
                     </div>
                 </div>
@@ -318,5 +261,7 @@
                 speedAsDuration: true
             });
         </script>
+
+
     </body>
 </html>
