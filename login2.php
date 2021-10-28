@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="cards.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <script src="https://code.jquery-3.5.1.min.js"></script>
@@ -14,11 +15,10 @@
     <section id="between">
     <div class="a">
         <div class="hero">
+            <a href="logout.php" style="color: black; cursor: pointer; color: darkblue;"><h2 style="position: relative; left: 1222px; top: 12px;">Logout</h2></a>
             <section id="sign-up">
             <div class="navbar">
                 <img src="images/logo.png" class="logo">
-                <button type="button"><a href="http://localhost/php_program/PharmaCity.html#account">Sign Up/Login</a></button>
-            </div>
             </section>
             <div class="content">
                 <small>Types of Medicines</small>
@@ -30,9 +30,7 @@
                     <a href="https://www.instagram.com/__pharmacity__/"><img src="images1/ig.png"></a>
                     <a href="https://twitter.com/__pharmacity__"><img src="images1/tw.png"></a>
                 </div>
-                <div class="useful-links">
-                    <img src="images1/info.png">
-                </div>
+                
             </div>
             <div class="bubbles">
                 <img src="images1/bubble.png">
@@ -52,31 +50,31 @@
                         <ul>
                             <div class="option">
                                 <input type="radio" class="radio" id="automobiles" name="category"/>
-                                <li><a href="http://localhost/php_program/indx2.php">Liquid</a></li>
+                                <li><a href="http://localhost/php_program/index2.php">Liquid</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="film" name="category"/>
-                                <li><a href="http://localhost/php_program/tabl.php">Tablet</a></li>
+                                <li><a href="http://localhost/php_program/tab.php">Tablet</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="science" name="category" />
-                                <li><a href="http://localhost/php_program/caps.php">Capsules</a></li>
+                                <li><a href="http://localhost/php_program/cap.php">Capsules</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="art" name="category" />
-                                <li><a href="http://localhost/php_program/topmed.php">Topical Medicines</a></li>
+                                <li><a href="http://localhost/php_program/top-med.php">Topical Medicines</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="music" name="category" />
-                                <li><a href="http://localhost/php_program/drop.php">Drops</a></li>
+                                <li><a href="http://localhost/php_program/drops.php">Drops</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="travel" name="category" />
-                                <li><a href="http://localhost/php_program/inhaler.php">Inhalers</a></li>
+                                <li><a href="http://localhost/php_program/inhalers.php">Inhalers</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="sports" name="category" />
-                                <li><a href="http://localhost/php_program/injection.php">Injections</a></li>
+                                <li><a href="http://localhost/php_program/injections.php">Injections</a></li>
                             </div>
                         </ul>
                     </div>
@@ -92,23 +90,21 @@
             
         <script src="main2.js"></script>
         <section id="medicines">
-            <!-- <a href="#between"><img src="images/gtp.png" id="menuBtn"></a> -->
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-
             
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
         </section>
     </div>
     </body>

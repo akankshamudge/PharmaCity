@@ -23,7 +23,7 @@
                     header("Location: sign.html");
                 }
                 else{
-                    echo "<h2>Invalid Email or Password</h2>";
+                    header("Location: invalid.html");
                 }
                 $conn->close();
             }

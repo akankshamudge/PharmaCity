@@ -172,7 +172,7 @@ h1{
 }
 .selected::after{
     content: "";
-    background: url("arrow-down.svg");
+    background: url("img/arrow-down.svg");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -251,4 +251,9 @@ nav ul li a{
     z-index: 2;
     border-radius: 24px;
     cursor: pointer;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }

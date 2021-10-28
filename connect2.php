@@ -16,13 +16,13 @@
             $data = $stmt_result->fetch_assoc();
             if($data['password'] === $password){
                 $_SESSION['email'] = $email;
-                echo "Welcome, ".$_SESSION['email'];
-                header("Location: login.html");
+                echo "alert(Welcome, )".$_SESSION['email'];
+                header("Location: login2.php");
             }else{
-                echo "<h2>Invalid Email or Password</h2>";
+                header("Location: invalid.html");
             }
         }else{
-            echo "<h2>Invalid Email or Password</h2>";
+            header("Location: invalid.html");
         }
     }
 ?>
