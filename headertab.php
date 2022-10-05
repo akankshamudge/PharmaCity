@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://localhost/php_program/index.html">Back</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Back</a>
                 </li>
             </ul>
         <div>

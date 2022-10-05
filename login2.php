@@ -50,31 +50,31 @@
                         <ul>
                             <div class="option">
                                 <input type="radio" class="radio" id="automobiles" name="category"/>
-                                <li><a href="http://localhost/php_program/index2.php">Liquid</a></li>
+                                <li><a href="./index2.php">Liquid</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="film" name="category"/>
-                                <li><a href="http://localhost/php_program/tab.php">Tablet</a></li>
+                                <li><a href="./tab.php">Tablet</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="science" name="category" />
-                                <li><a href="http://localhost/php_program/cap.php">Capsules</a></li>
+                                <li><a href="./cap.php">Capsules</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="art" name="category" />
-                                <li><a href="http://localhost/php_program/top-med.php">Topical Medicines</a></li>
+                                <li><a href="./top-med.php">Topical Medicines</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="music" name="category" />
-                                <li><a href="http://localhost/php_program/drops.php">Drops</a></li>
+                                <li><a href="./drops.php">Drops</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="travel" name="category" />
-                                <li><a href="http://localhost/php_program/inhalers.php">Inhalers</a></li>
+                                <li><a href="./inhalers.php">Inhalers</a></li>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="sports" name="category" />
-                                <li><a href="http://localhost/php_program/injections.php">Injections</a></li>
+                                <li><a href="./injections.php">Injections</a></li>
                             </div>
                         </ul>
                     </div>
