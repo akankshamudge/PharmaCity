@@ -8,7 +8,7 @@
     if($con->connect_error){
         die("Failed to connect : " .$con->connect_error);
     }else{
-        $stmt = $con->prepare("select * from account where email = ?");
+        $stmt = $con->prepare("select * from account where email = ?");  
         $stmt->bind_param("s",$email);
         $stmt->execute();
         $stmt_result = $stmt->get_result();
